@@ -298,7 +298,8 @@ template {
   display: none;
 }
 * {
-  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: Courier;
 }
 header {
   grid-area: header;
@@ -337,6 +338,12 @@ footer {
 .listing .body {
   padding: 10px;
 }
+* {
+  -o-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
 @media screen and (min-width: 992px) {
   body {
     background-color: #FFFFEE;
@@ -344,5 +351,15 @@ footer {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-areas: "header header" "article supplementary-info" "other-products ." "footer footer";
+  }
+}
+@media screen and (min-width: 1600px) {
+  body {
+    background-color: #FFFFEE;
+    grid-gap: 0px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-areas: "header header header" "article other-products supplementary-info" "footer footer footer";
+    font-size: 1.3em;
   }
 }
