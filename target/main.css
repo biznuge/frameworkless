@@ -300,6 +300,9 @@ template {
 * {
   font-family: 'Roboto', sans-serif;
 }
+body {
+  font-size: 1.3rem;
+}
 header {
   grid-area: header;
 }
@@ -336,6 +339,18 @@ footer {
 }
 .listing .body {
   padding: 10px;
+}
+ul,
+ol {
+  padding: 20px;
+}
+li {
+  padding: 20px;
+}
+.horizontal > li {
+  float: left;
+  list-style: none;
+  padding: 0 20px;
 }
 @media screen and (min-width: 992px) {
   body {
